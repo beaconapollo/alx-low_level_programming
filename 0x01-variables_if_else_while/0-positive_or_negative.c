@@ -8,8 +8,8 @@
  * Return Negative/positive/zero
  */
 int main(void)
-{
-	int n;
+{ 
+	int n; //Random number
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
