@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
+/* main: Compare a number with 5*/
 /**
  * main: is Main function
  * Return: 0 if success
