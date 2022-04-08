@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
  * Check a number is positive, zero or negative
  * Main functiono returns +/zero/-
