@@ -3,7 +3,6 @@
 #include <stdio.h>
 
 /**
- * 1-last_digit.c: Compare with 5
  * main: is Main function
  * Return: 0 if success
  */
