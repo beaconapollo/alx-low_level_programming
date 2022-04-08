@@ -3,9 +3,7 @@
 #include <stdio.h>
 
 /*Check a number is positive, zero or negative*/
-
-/*Main*/
-int main(void)
+int main(void) // Main function to check a number
 {
 	int n;
 
