@@ -3,6 +3,7 @@
 #include <stdio.h>
 /**
  * Description: Compare Last Digit with 5
+ * main function: is Main task
  * Return: 0 if success
  */
 int main(void)
