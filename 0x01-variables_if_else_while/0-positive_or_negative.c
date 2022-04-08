@@ -2,7 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 
-/* betty style doc for function main goes there*/
+/* 
+ *Check a number is positive, zero or negative
+ */
 int main(void)
 {
 	int n;
