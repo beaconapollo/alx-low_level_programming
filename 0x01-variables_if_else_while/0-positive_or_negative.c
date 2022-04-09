@@ -6,6 +6,7 @@
  * Main functiono returns +/zero/-
  *
  * Return Negative/positive/zero
+ *
  */
 int main(void)
 {
