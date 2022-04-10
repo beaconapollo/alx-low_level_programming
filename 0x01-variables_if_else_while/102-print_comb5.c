@@ -19,7 +19,8 @@ int main(void)
 		for (b = '0'; b <= '9'; b++)
 		{
 			d = b + 1;
-			c = a
+			c = a;
+
 			for (; c <= '9'; c++)
 			{
 				for (; d <= '9'; d++)
