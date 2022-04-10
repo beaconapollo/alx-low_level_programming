@@ -18,19 +18,20 @@ int main(void)
 	{
 		for (b = '0'; b <= '9'; b++)
 		{
-			d = b + 1;
-			c = a
-			for (; c <= '9'; c++)
+			for (c = '0'; c <= '9'; c++)
 			{
-				for (; d <= '9'; d++)
+				for (d = '0'; d <= '9'; d++)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(' ');
-					putchar(c);
-					putchar(d);
-					if (a != '7' || b != '8' || c != '9')
+					if (a == '0' && b == '0' && c == '0' && d == '0')
 					{
+					}
+					else
+					{
+						putchar(a);
+						putchar(b);
+						putchar(' ');
+						putchar(c);
+						putchar(d);
 						putchar(',');
 						putchar(' ');
 					}
