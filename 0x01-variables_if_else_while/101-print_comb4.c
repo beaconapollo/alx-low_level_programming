@@ -22,7 +22,7 @@ int main(void)
 
 				if (ch2 != ch1 && ch2 != ch0 && ch1 != ch0)
 				{
-					if(ch2 < ch1 && ch2 < ch1  && ch1 < ch0)
+					if (ch2 < ch1 && ch2 < ch1  && ch1 < ch0)
 					{
 						putchar(ch2);
 						putchar(ch1);
