@@ -20,21 +20,18 @@ int main(void)
 			for (ch0 = '0'; ch0 <= '9'; ch0++)
 			{
 
-				if (ch2 != ch1 && ch2 != ch0 && ch1 != ch0)
+				if (ch2 != ch1 && ch2 != ch0 && ch1 != ch0 && ch2 < ch1 && ch2 < ch1  && ch1 < ch0)
 				{
-					if (ch2 < ch1 && ch2 < ch1  && ch1 < ch0)
+					putchar(ch2);
+					putchar(ch1);
+					putchar(ch0);
+					if (ch2 == '7' && ch1 == '8' && ch0 == '9')
 					{
-						putchar(ch2);
-						putchar(ch1);
-						putchar(ch0);
-						if (ch2 == '7' && ch1 == '8' && ch0 == '9')
-						{
-						}
-						else
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
