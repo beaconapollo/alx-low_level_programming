@@ -9,23 +9,23 @@
  */
 int main(void)
 {
-	int ch2;
-	int ch1;
-	int ch0;
+	int a;
+	int b;
+	int c;
 
-	for (ch2 = '0'; ch2 <= '9'; ch2++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		for (ch1 = '0'; ch1 <= '9'; ch1++)
+		for (b = '0'; b <= '9'; b++)
 		{
-			for (ch0 = '0'; ch0 <= '9'; ch0++)
+			for (c = '0'; c <= '9'; c++)
 			{
 
-				if (ch2 != ch1 && ch2 != ch0 && ch1 != ch0 && ch2 < ch1 && ch2 < ch1  && ch1 < ch0)
+				if (a != b && a != c && b != c && a < b && a < c  && b < c)
 				{
-					putchar(ch2);
-					putchar(ch1);
-					putchar(ch0);
-					if (ch2 == '7' && ch1 == '8' && ch0 == '9')
+					putchar(a);
+					putchar(b);
+					putchar(c);
+					if (a == '7' && b == '8' && c == '9')
 					{
 					}
 					else
