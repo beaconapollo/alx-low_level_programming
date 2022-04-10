@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int ch2
+	int ch2;
 	int ch1;
 	int ch0;
 
