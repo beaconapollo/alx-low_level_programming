@@ -22,13 +22,16 @@ int main(void)
 			{
 				for (d = '0'; d <= '9'; d++)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(' ');
-					putchar(c);
-					putchar(d);
-					putchar(',');
-					putchar(' ');
+					if (a !='0' && b != '0' && c != '0' && d != '0')
+					{
+						putchar(a);
+						putchar(b);
+						putchar(' ');
+						putchar(c);
+						putchar(d);
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
