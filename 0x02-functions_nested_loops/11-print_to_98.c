@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * print_to_98 - prints numbers n to 98
  * 
@@ -17,7 +16,7 @@ void print_to_98(int n)
 			n--;
 		}
 	}
-	else (n < 98)
+	else
 	{
 		while (n < 98)
 		{
