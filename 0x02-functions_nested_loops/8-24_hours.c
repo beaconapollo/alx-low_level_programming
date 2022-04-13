@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_last_digit - prints the last digit of a number
- * @n: number to test
- * Return: last digit of n
+ * jack_bauer - prints hours of a day
+ *  @hh, mm: number to test
+ * Return: Nothing
  *
  */
 void jack_bauer(void)
