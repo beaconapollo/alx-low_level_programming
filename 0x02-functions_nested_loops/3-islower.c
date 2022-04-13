@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - prints the english alphabet a-z 10 times
+ * _islower - prints 1 if a character is lowercase otherwise 0
  *
  * Return: Nothing.
  *
