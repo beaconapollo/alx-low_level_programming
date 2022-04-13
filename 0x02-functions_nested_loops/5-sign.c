@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _isalpha - tests whether a character is letter
- * @c: character to test
- * Return: 1 if it is a letter otherwise 0
- *
+ * print_sign - tests whether a number is +/-/0
+ * @n: number to test
+ * Return: 1 if it is is positive -1 if negative otherwise 0
+ * 
  */
 int print_sign(int n)
 {
