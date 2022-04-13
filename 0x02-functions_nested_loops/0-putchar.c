@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <unistd.h>
 #include <stdio.h>
 /**
  * main - Entry point
@@ -7,15 +8,12 @@
  * Return: Always 0 (Success/correct)
  *
  */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 int main(void)
 {
 	char c[] = "_putchar";
+	int i;
 
-	for (int i = 0; i < 8; i++)
+	for (i = 0; i < 8; i++)
 	{
 		_putchar(c[i]);
 	}	
