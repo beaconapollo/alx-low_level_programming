@@ -2,7 +2,6 @@
 #include <time.h>
 #include <unistd.h>
 #include <stdio.h>
-#include <main.h>
 /**
  * main - Entry point
  *
