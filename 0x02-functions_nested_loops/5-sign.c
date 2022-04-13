@@ -3,7 +3,7 @@
  * print_sign - tests whether a number is +/-/0
  * @n: number to test
  * Return: 1 if it is is positive -1 if negative otherwise 0
- * 
+ *
  */
 int print_sign(int n)
 {
