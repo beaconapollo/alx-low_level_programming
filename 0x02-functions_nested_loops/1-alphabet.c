@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - prints the english alphabet a-z
  *
- * Return: Always 0 (Success/correct)
+ * Return: Nothing.
  *
  */
 void print_alphabet(void)
