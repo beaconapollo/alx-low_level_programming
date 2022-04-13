@@ -5,7 +5,7 @@
  * Return: last digit of n
  *
  */
-void jack_bauer()
+void jack_bauer(void)
 {
 	int hh, mm;
 
