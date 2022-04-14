@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * print_times_table - prints the less than 15 times table
- * @n number to test
+ * @n: int type number for test
  * @r result of i * j
  * Return: Nothing
  *
