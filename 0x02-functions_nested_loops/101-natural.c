@@ -1,20 +1,20 @@
 #include <stdio.h>
 /**
- * main - computes the sum 
- * @sum:stores sum of 
+ * main - computes the sum
+ * @n:stores sum of
  * Return: 0
  */
 int main(void)
 {
-	int sum = 0, i;
+	int n = 0, i;
 
 	for (i = 1; i < 1024; i++)
 	{
 		if (i % 3 == 0 || i % 5 == 0)
 		{
-			sum += i;
+			n += i;
 		}
 	}
-	printf("%d\n", sum);
+	printf("%d\n", n);
 	return (0);
 }
