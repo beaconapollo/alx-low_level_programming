@@ -2,7 +2,8 @@
 #include <stdio.h>
 /**
  * print_times_table - prints the less than 15 times table
- * @n, m: number to test
+ * @n number to test
+ * @r result of i * j
  * Return: Nothing
  *
  */
@@ -10,7 +11,7 @@ void print_times_table(int n)
 {
 	int i, j, r;
 
-	if (n <= 15 && n >=0)
+	if (n <= 15 && n >= 0)
 	{
 		for (i = 0; i <= n; i++)
 		{
