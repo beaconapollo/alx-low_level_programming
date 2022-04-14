@@ -6,7 +6,8 @@
  */
 int main(void)
 {
-	int n = 0, i = 2, j = 1, t;
+	int n = 0;
+        long int i = 2, j = 1, t;
 
 	while (n < 50)
 	{
