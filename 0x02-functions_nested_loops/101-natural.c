@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 /**
  * natural - computes the absolute value of an integer
  * @n: number to test
@@ -11,11 +11,11 @@ int main(void)
 
 	for (i = 1; i < 1024; i++)
 	{
-		if(i % 3 == 0 || i % 5 == 0)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
 			sum += i;
 		}
 	}
 	printf("%d", sum);
-	return 0;
+	return (0);
 }
