@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_times_table - prints the less than 15 times table
  * @n, m: number to test
