@@ -11,7 +11,7 @@ int main(void)
 
 	while (n < 50)
 	{
-		printf("%d", j);
+		printf("%ld", j);
 		if (n != 49)
 		{
 			printf(", ");
