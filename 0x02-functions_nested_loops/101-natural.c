@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
- * natural - computes the absolute value of an integer
- * @n: number to test
- * Return: absolute value of n
- *
+ * main - computes the sum 
+ * @sum:stores sum of 
+ * Return: 0
  */
 int main(void)
 {
