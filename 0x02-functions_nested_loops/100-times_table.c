@@ -18,7 +18,14 @@ void print_times_table(int n)
 			{
 				if (j != 0)
 				{
-					printf("  ");
+					if (j < 10)
+					{
+						printf("  ");
+					}
+					else
+					{
+						printf(" ");
+					}
 				}
 				r = i * j;
 				printf("%d", r);
