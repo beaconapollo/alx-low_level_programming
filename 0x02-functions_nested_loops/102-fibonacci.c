@@ -10,7 +10,11 @@ int main(void)
 
 	while (n < 50)
 	{
-		printf("%d, ", j);
+		printf("%d", j);
+		if (n != 49)
+		{
+			printf(", ");
+		}
 		t = i;
 		i += j;
 		j = t;
