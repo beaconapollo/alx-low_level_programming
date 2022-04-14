@@ -14,6 +14,7 @@ int main(void)
 		t = i;
 		i += j;
 		j = t;
+		n++;
 	}
 	return (0);
 }
