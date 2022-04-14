@@ -5,7 +5,7 @@
  * Return: absolute value of n
  *
  */
-void natural()
+int main(void)
 {
 	int sum = 0, i;
 
