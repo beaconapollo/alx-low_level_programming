@@ -21,5 +21,6 @@ int main(void)
 		j = t;
 		n++;
 	}
+	printf("\n");
 	return (0);
 }
