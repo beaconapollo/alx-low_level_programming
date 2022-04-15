@@ -4,7 +4,7 @@
  * more_numbers - entry point
  *
  * Description: Prints the numbers with _putchar
- *
+ * @n: number of lines
  * Return: void
  */
 
