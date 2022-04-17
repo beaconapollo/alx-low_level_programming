@@ -1,14 +1,12 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * print_Fizz-Buzz - entry point
+ * main - entry point
  *
  * Description: Prints lines
  * Return: void
  */
-
-void print_Fizz-Buzz(void)
+int main(void)
 {
 	int i;
 
@@ -50,4 +48,5 @@ void print_Fizz-Buzz(void)
 			}
 		}
 	}
+	return (0);
 }
