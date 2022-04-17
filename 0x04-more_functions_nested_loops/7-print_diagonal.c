@@ -8,7 +8,7 @@
  * Return: void
  */
 
-void print_digonal(int n)
+void print_diagonal(int n)
 {
 	int i, j;
 	
@@ -24,7 +24,7 @@ void print_digonal(int n)
 			{
 				_putchar(' ');
 			}
-			_putchar('\');
+			_putchar('\\');
 			_putchar('\n');
 		}
 	}
