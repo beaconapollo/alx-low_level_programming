@@ -10,7 +10,7 @@
 
 void print_digonal(int n)
 {
-	int i;
+	int i, j;
 	
 	if (n <= 0)
 	{
@@ -18,11 +18,14 @@ void print_digonal(int n)
 	}
 	else
 	{
-		for (i = 0; i < n; i++)
+		for (i = 1; i <= n; i++)
 		{
-			_putchar(' ');
+			for (j = 1; j < i; j++)
+			{
+				_putchar(' ');
+			}
+			_putchar('\');
+			_putchar('\n');
 		}
-		_putchar('\');
-		_putchar('\n');
 	}
 }
