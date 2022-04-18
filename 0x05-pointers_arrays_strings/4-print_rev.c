@@ -13,17 +13,24 @@ void print_rev(char *s)
 	int i = 0, counter = 0;
 	char *p;
 
-	p = s;
-	while (*p != '\0')
+	if (*s == '\0')
 	{
-		i = counter;
-		counter++;
-		p++;
-	}	
-	while (i >= 0)
+		printf("%c", s);
+	}
+	else
 	{
-		printf("%c", *(s + i));
-		i--;
+		p = s;
+		while (*p != '\0')
+		{
+			i = counter;
+			counter++;
+			p++;
+		}	
+		while (i >= 0)
+		{
+			printf("%c", *(s + i));
+			i--;
+		}
 	}
 	printf("\n");
 }
