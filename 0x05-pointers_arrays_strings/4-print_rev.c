@@ -13,7 +13,7 @@ void print_rev(char *s)
 	int i = 0, counter = 0;
 	char *p;
 
-	if (*s == '\0')
+	if (*s == "")
 	{
 		printf("%c", *s);
 	}
