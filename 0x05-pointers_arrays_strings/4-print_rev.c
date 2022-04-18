@@ -21,7 +21,7 @@ void print_rev(char *s)
 			i = counter;
 			counter++;
 			p++;
-		}	
+		}
 		while (i >= 0)
 		{
 			printf("%c", *(s + i));
