@@ -11,12 +11,14 @@
 void print_rev(char *s)
 {
 	int i = 0;
+	char *p;
 
-	while (*s != '\0')
+	p = s;
+	while (*p != '\0')
 	{
 		i++;
-		s++;
-	}
+		p++;
+	}	
 	while (i >= 0)
 	{
 		printf("%c", *(s + i));
