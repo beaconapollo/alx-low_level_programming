@@ -15,7 +15,7 @@ void print_rev(char *s)
 
 	if (*s == '\0')
 	{
-		printf("%c", s);
+		printf("%c", *s);
 	}
 	else
 	{
