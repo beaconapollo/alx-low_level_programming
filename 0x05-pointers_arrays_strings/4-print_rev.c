@@ -12,10 +12,12 @@ void print_rev(char *s)
 {
 	int i = 0, counter = 0;
 	char *p;
+	char ch;
 
-	if (*s == "")
+	ch = *s;
+	if (ch == "");
 	{
-		printf("%c", *s);
+		printf("%c", ch);
 	}
 	else
 	{
