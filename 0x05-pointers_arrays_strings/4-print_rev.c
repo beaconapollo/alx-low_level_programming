@@ -14,12 +14,7 @@ void print_rev(char *s)
 	char *p;
 	char ch;
 
-	ch = *s;
-	if (*s == '\0')
-	{
-		printf("%c", ch);
-	}
-	else
+	if (*s != '\0')
 	{
 		p = s;
 		while (*p != '\0')
