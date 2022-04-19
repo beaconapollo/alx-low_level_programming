@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>w
 /**
  * puts2 - entry mode
  * @str: string to print
