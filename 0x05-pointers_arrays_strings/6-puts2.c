@@ -10,11 +10,13 @@
 void puts2(char *str)
 {
 	int i = 0, len = 0;
+	char *p;
 
-	while (*str)
+	p = str;
+	while (*p)
 	{
 		len++;
-		str++;
+		p++;
 	}
 	while (*(str + i))
 	{
