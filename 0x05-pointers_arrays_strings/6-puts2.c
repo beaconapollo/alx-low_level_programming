@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * puts2 - prints every other character of a  string to stdout
@@ -12,8 +13,8 @@ void puts2(char *str)
 
 	while (*(str + i))
 	{
-		_putchar(*(str + i));
+		printf("%c", *(str + i));
 		i = i + 2;
 	}
-	_putchar('\n');
+	printf("\n");
 }
