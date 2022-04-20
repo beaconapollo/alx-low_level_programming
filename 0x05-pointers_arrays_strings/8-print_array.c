@@ -3,14 +3,15 @@
 
 /**
  * print_array - prints an array of integers
- * @a - an array of integers
- * @n - the number of elements of the array
+ * @a- an array of integers
+ * @n- the number of elements of the array
  *
  * Return: void
  */
 void print_array(int *a, int n)
 {
 	int i;
+
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", a[i]);
