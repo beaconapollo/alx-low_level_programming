@@ -9,11 +9,19 @@
  */
 void puts2(char *str)
 {
-	int i = 0;
+	int i = 0, len = 0;
 
+	while (*str)
+	{
+		len++;
+		str++;
+	}
 	while (*(str + i))
 	{
-		printf("%c", *(str + i));
+		if (i < len)
+		{
+			printf("%c", *(str + i));
+		}
 		i = i + 2;
 	}
 	printf("\n");
