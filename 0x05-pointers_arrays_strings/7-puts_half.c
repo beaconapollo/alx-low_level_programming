@@ -9,7 +9,7 @@
  */
 void puts_half(char *str)
 {
-	int i = 0, len = 0;
+	int i, len = 0;
 	char *p;
 
 	p = str;
@@ -18,9 +18,10 @@ void puts_half(char *str)
 		len++;
 		p++;
 	}
+	i = (len - 1)/2;
 	while (*(str + i))
 	{
-		if (i < (len - 1)/2)
+		if (i < len)
 		{
 			printf("%c", *(str + i));
 		}
