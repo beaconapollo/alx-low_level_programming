@@ -14,9 +14,12 @@ void puts2(char *str)
 	{
 		 len++;
 	}
-	while (*(str + i) != '\0' && i < len)
+	while (*(str + i))
 	{
-		printf("%c", *(str + i));
+		if (i < len)
+		{
+			printf("%c", *(str + i));
+		}
 		i += 2;
 	}
 	printf("\n");
