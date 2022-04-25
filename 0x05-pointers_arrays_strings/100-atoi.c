@@ -10,8 +10,8 @@
 int _atoi(char *s)
 {
 	int i, j, n, sign;
-	i = n = 0;
 
+	i = n = 0;
 	sign = 1;
 
 	while ((*(s + i) != '\0') && (*(s + i) < '0' || *(s + i) > '9'))
