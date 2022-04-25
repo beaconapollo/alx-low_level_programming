@@ -1,6 +1,9 @@
 #include "main.h"
 /*
- *_memset - function fills n bytes with a constant byte
+ * _memset - function fills n bytes with a constant byte
+ * @s: memory space to be filled
+ * @b: constant byte to fill with
+ * @n: number of spaces  provided
  */
 char *_memset(char *s, char b, unsigned int n)
 {
