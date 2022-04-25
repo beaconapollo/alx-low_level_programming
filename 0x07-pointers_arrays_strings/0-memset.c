@@ -4,6 +4,11 @@
  */
 char *_memtest(char *s, char b, unsigned int n)
 {
-	
-	return s;
+	insigned int i = 0;
+	while (i < n)
+	{
+		*(s + i) = b;
+		i++;
+	}
+	return (s);
 }
