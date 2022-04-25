@@ -14,8 +14,8 @@ int main(void)
 	int randomizer = 0;
 	char numbers[] = "0123456789";
 	char symbols[] = "!@#$^&*?";
-	char letter[] = "abcdefghijklmnoqprstuvwyzx";
-	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
+	char lowercase[] = "abcdefghijklmnoqprstuvwyzx";
+	char uppercase[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
 	char password[58];
 
 	srand(time(NULL));
@@ -36,13 +36,13 @@ int main(void)
 		}
 		else if (randomizer == 3)
 		{
-			password[i] = LETTER[rand() % 26];
+			password[i] = lowercase[rand() % 26];
 			randomizer = rand() % 4;
 			printf("%c", password[i]);
 		}
 		else
 		{
-			password[i] = letter[rand() % 26];
+			password[i] = uppercase[rand() % 26];
 			randomizer = rand() % 4;
 			printf("%c", password[i]);
 		}
