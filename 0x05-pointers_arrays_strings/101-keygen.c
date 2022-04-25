@@ -16,11 +16,11 @@ int main(void)
 	char symbols[] = "!@#$^&*?";
 	char letter[] = "abcdefghijklmnoqprstuvwyzx";
 	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
-	char password[N];
+	char password[58];
 
 	srand(time(NULL));
 	randomizer = rand() % 4;
-	for (i = 0; i < N; i++)
+	for (i = 0; i < 58; i++)
 	{
 		if (randomizer == 1)
 		{
