@@ -9,9 +9,8 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i, j;
-	char *p;
-
+	int i;
+	
 	i = 0;
 	while (*(s + i))
 	{
