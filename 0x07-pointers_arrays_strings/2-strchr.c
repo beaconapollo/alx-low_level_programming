@@ -9,19 +9,21 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i;
+	int i, j;
+	char *p;
 	
+	i = 0;
+	while (*(s + i) != '\0' || *(s + i) != c)
+	{
+		i++;
+	}
+	j = i;
 	i = 0;
 	while (*(s + i))
 	{
-		if (*(s + i) == c)
-		{
-			return (s + i);
-		}
+		*(p + i) = *(s + j);
+		i++;
+		j++;
 	}
-	if (*(s + i) == c)
-	{
-		return (s + i);
-	}
-	return (0);
+	return (p);
 }
