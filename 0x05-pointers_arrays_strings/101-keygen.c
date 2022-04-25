@@ -20,32 +20,31 @@ int main(void)
 
 	srand(time(NULL));
 	randomizer = rand() % 4;
-	for (i = 0; i < 58; i++)
+	while (i < 58)
 	{
 		if (randomizer == 1)
 		{
 			password[i] = numbers[rand() % 10];
 			randomizer = rand() % 4;
-			printf("%c", password[i]);
 		}
 		else if (randomizer == 2)
 		{
 			password[i] = symbols[rand() % 8];
 			randomizer = rand() % 4;
-			printf("%c", password[i]);
 		}
 		else if (randomizer == 3)
 		{
 			password[i] = lowercase[rand() % 26];
 			randomizer = rand() % 4;
-			printf("%c", password[i]);
 		}
 		else
 		{
 			password[i] = uppercase[rand() % 26];
 			randomizer = rand() % 4;
-			printf("%c", password[i]);
 		}
+		i++;
 	}
+	password[i] = '\0';
+	printf("%s", password);
 	return (0);
 }
