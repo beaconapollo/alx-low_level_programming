@@ -47,5 +47,5 @@ int main(void)
 			printf("%c", password[i]);
 		}
 	}
-	retrun (0);
+	return (0);
 }
