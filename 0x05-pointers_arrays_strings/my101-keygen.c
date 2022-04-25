@@ -13,9 +13,9 @@ int main(void)
 	int i = 0;
 	int randomizer = 0;
 	char numbers[] = "0123456789";
-	char symbols[] = "!@#$^&*?";
-	char lowercase[] = "abcdefghijklmnoqprstuvwyzx";
-	char uppercase[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
+	char symbols[] = " !""'@#$%^&*()+,-./:;<=>?[]_`{|}~";
+	char lowercase[] = "abcdefghijklmnoqprstuvwyz";
+	char uppercase[] = "ABCDEFGHIJKLMNOQPRSTUYWVZ";
 	char password[58];
 
 	srand(time(NULL));

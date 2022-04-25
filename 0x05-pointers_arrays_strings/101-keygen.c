@@ -1,4 +1,3 @@
-#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -10,41 +9,34 @@
  */
 int main(void)
 {
-	int i = 0;
-	int randomizer = 0;
-	char numbers[] = "0123456789";
-	char symbols[] = " !""'@#$%^&*()+,-./:;<=>?[]_`{|}~";
-	char lowercase[] = "abcdefghijklmnoqprstuvwyz";
-	char uppercase[] = "ABCDEFGHIJKLMNOQPRSTUYWVZ";
-	char password[58];
+	int i, j, k, s;
+	char c[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char p[58];
 
 	srand(time(NULL));
-	randomizer = rand() % 4;
-	while (i < 58)
+	while (s != 2772)
 	{
-		if (randomizer == 1)
+		i = k = s = 0;
+		while ((2772 - 122) > s)
 		{
-			password[i] = numbers[rand() % 10];
-			randomizer = rand() % 4;
+			j = rand() % 62;
+			p[i] = c[j];
+			s += c[j];
+			i++;
 		}
-		else if (randomizer == 2)
+		while (c[k])
 		{
-			password[i] = symbols[rand() % 8];
-			randomizer = rand() % 4;
+			if (c[k] == (2772 - s))
+			{
+				p[i] = c[k];
+				s += c[k];
+				i++;
+				break;
+			}
+			k++;
 		}
-		else if (randomizer == 3)
-		{
-			password[i] = lowercase[rand() % 26];
-			randomizer = rand() % 4;
-		}
-		else
-		{
-			password[i] = uppercase[rand() % 26];
-			randomizer = rand() % 4;
-		}
-		i++;
 	}
-	password[i] = '\0';
-	printf("%s", password);
+	p[i] = '\0';
+	printf("%s", p);
 	return (0);
 }
