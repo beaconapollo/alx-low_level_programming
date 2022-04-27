@@ -20,10 +20,9 @@ int prime_check(int p, int i)
 }
 /**
  * is_prime_number - prints 1 a prime number
- * @x: base number
- * @y: exponent
+ * @n: a number to check prime number
  *
- * Return: x power of y
+ * Return: 1 if prime number
  */
 int is_prime_number(int n)
 {
