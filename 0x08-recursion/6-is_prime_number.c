@@ -27,5 +27,5 @@ int is_prime_number(int n)
 {
 	if (n == 2)
 		return (1);
-	return (prime_check(n, 2);
+	return (prime_check(n, 2));
 }
