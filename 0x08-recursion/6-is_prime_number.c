@@ -9,12 +9,14 @@
  */
 int prime_check(int p, int i)
 {
-	if (i == 1)
-		return (1);
+	if (p < 2)
+		return (0);
 	else if (p % i == 0)
 		return (0);
+	else if (i * i > n)
+		return (1);
 	else
-		return (prime_check(p, i - 1));
+		return (prime_check(p, i + 1));
 }
 /**
  * is_prime_number - prints 1 a prime number
