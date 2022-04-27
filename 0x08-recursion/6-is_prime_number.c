@@ -13,7 +13,7 @@ int prime_check(int p, int i)
 		return (0);
 	else if (p % i == 0)
 		return (0);
-	else if (i * i > n)
+	else if (i * i > p)
 		return (1);
 	else
 		return (prime_check(p, i + 1));
