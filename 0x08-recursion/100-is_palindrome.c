@@ -22,6 +22,10 @@ int isPalindrome(char *str, int ai, int zi)
 	{
 		return (isPalindrome(str, ai + 1, zi - 1));
 	}
+	else
+	{
+		return (1);
+	}
 }
 /**
  * is_palindrome - prints 1 a palindrome string 
