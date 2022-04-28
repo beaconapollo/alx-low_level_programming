@@ -14,7 +14,7 @@ int isPalindrome(char *str, int leftIndex, int rightIndex)
 		return (0);
 	if (leftIndex == rightIndex && str[leftIndex] == str[rightIndex])
 		return (1);
-	if (leftIndex == rightIndex - 1 && str[leftIndex] == str[rigthIndex])
+	if (leftIndex == rightIndex - 1 && str[leftIndex] == str[rightIndex])
 	{
 		return (1);
 	}
