@@ -45,7 +45,7 @@ int isPalindrome(char *str, int ai, int zi)
 	}
 }
 /**
- * is_palindrome - prints 1 a palindrome string 
+ * is_palindrome - prints 1 a palindrome string
  * @s: a string to be checked
  *
  * Return: 1 if palindrome
