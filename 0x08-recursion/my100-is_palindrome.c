@@ -3,29 +3,22 @@
 /**
  * isPalindrome - checks if a string palindrome
  * @str: a string to be checked
- * @ai: first index of a string
- * @zi: last index of a string
+ * @leftIndex: first index of a string
+ * @rightIndex: last index of a string
  *
  * Return: 1 if a string is a palindrome
  */
-int isPalindrome(char *str, int ai, int zi)
+int isPalindrome(char *str, int leftIndex, int rightIndex)
 {
-	if (str[ai] != str[zi])
-	{
+	if (str[leftIndex] != str[rightIndex])
 		return (0);
-	}
-	else if (ai == zi && str[ai] == str[zi])
+	if (leftIndex == rightIndex && str[leftIndex] == str[rightIndex])
+		return (1);
+	if (leftIndex == rightIndex - 1 && str[leftIndex] == str[rightIndex])
 	{
 		return (1);
 	}
-	else if (ai == zi - 1 && str[ai] == str[zi])
-	{
-		return (1);
-	}
-	else
-	{
-		return (isPalindrome(str, ai + 1, zi - 1));
-	}
+	return (isPalindrome(str, leftIndex + 1, rightIndex - 1));
 }
 /**
  * is_palindrome - prints 1 a palindrome string 
