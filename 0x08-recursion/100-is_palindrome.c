@@ -13,7 +13,7 @@ int isPalindrome(char *inputString, int leftIndex, int rightIndex)
 	if (*inputString == '\0' || leftIndex < 0 || rightIndex < 0)
 		return (0);
 	if (leftIndex >= rightIndex)
-		return 1;
+		return (1);
 	if (inputString[leftIndex] == inputString[rightIndex])
 	{
 		return (isPalindrome(inputString, leftIndex + 1, rightIndex - 1));
