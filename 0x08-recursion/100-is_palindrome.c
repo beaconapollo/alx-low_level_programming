@@ -10,19 +10,15 @@
  */
 int isPalindrome(char *str, int ai, int zi)
 {
+	if (ai == zi)
+	{
+		return (1);
+	}
 	if (str[ai] != str[zi])
 	{
 		return (0);
 	}
-	else if (ai == zi && str[ai] == str[zi])
-	{
-		return (1);
-	}
-	else if (ai == zi - 1 && str[ai] == str[zi])
-	{
-		return (1);
-	}
-	else
+	else if (ai < zi + 1)
 	{
 		return (isPalindrome(str, ai + 1, zi - 1));
 	}
