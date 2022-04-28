@@ -29,14 +29,16 @@ int isPalindrome(char *inputString, int leftIndex, int rightIndex)
 int is_palindrome(char *s)
 {
 	int lIndex = 0;
-	int rIndex = 0;
+	int len = 0;
 	char *p;
 	p = s;
 
 	while (*p)
 	{
-		rIndex++;
+		len++;
 		p++;
 	}
-	return (isPalindrome(s, lIndex, rIndex));
+	if (len == 0 || len == 1)
+		return (1);
+	return (isPalindrome(s, lIndex, len - 1));
 }
