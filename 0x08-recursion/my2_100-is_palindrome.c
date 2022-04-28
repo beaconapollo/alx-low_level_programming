@@ -1,23 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strlen_recursion - prints a string followed by a new line
- * @str: string to print
- *
- * Return: void
- */
-int _strlen_recursion(char *str)
-{
-        if (*str)
-        {
-                return (1 + _strlen_recursion(str + 1));
-        }
-        else
-        {
-                return (0);
-        }
-}
-/**
  * isPalindrome - checks if a string palindrome
  * @str: a string to be checked
  * @ai: first index of a string
@@ -55,7 +38,11 @@ int is_palindrome(char *s)
 	int lIndex = 0;
 	int len = 0;
 
-	len = _strlen_recursion(s);
+	while (*s)
+	{
+		len++;
+		s++;
+	}
 	if (len == 0 || len == 1)
 		return (1);
 	else
