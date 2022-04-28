@@ -8,14 +8,14 @@
  */
 int _strlen_recursion(char *str)
 {
-        if (*str)
-        {
-                return (1 + _strlen_recursion(str + 1));
-        }
-        else
-        {
-                return (0);
-        }
+	if (*str)
+	{
+		return (1 + _strlen_recursion(str + 1));
+	}
+	else
+	{
+		return (0);
+	}
 }
 /**
  * isPalindrome - checks if a string palindrome
