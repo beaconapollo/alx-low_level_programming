@@ -37,13 +37,11 @@ int is_palindrome(char *s)
 {
 	int lIndex = 0;
 	int len = 0;
-	char *p;
-	p = s;
 
-	while (*p)
+	while (*s)
 	{
 		len++;
-		p++;
+		s++;
 	}
 	if (len == 0 || len == 1)
 		return (1);
