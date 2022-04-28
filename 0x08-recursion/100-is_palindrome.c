@@ -2,23 +2,23 @@
 #include <stdio.h>
 /**
  * isPalindrome - checks if a string palindrome
- * @inputString: a string to be checked
+ * @str: a string to be checked
  * @leftIndex: first index of a string
  * @rightIndex: last index of a string
  *
  * Return: 1 if a string is a palindrome
  */
-int isPalindrome(char *inputString, int leftIndex, int rightIndex)
+int isPalindrome(char *str, int leftIndex, int rightIndex)
 {
-	if (*inputString == '\0' || leftIndex < 0 || rightIndex < 0)
+	if (str[leftIndex] != str[rigthIndex])
 		return (0);
-	if (leftIndex >= rightIndex)
+	if (leftIndex == rightIndex && str[leftIndex] == str[rightIndex])
 		return (1);
-	if (inputString[leftIndex] == inputString[rightIndex])
+	if (leftIndex == rightIndex - 1 && str[leftIndex] == str[rigthIndex])
 	{
-		return (isPalindrome(inputString, leftIndex + 1, rightIndex - 1));
+		return (1);
 	}
-	return (0);
+	return (isPalindrome(str, leftIndex + 1, rightIndex - 1));
 }
 /**
  * is_palindrome - prints 1 a palindrome string 
