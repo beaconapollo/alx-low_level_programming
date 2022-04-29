@@ -2,12 +2,13 @@
 #include <stdio.h>
 /**
  * main - prints its name
- * @s: string to print
+ * @arc: number of command line arguments
+ * @argv: commands
  *
- * Return: void
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[argc * 0]);
+	printf("%s\n", argv);
 	return(0);
 }
