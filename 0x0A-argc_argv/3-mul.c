@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * main - prints multiplication of arguments passed into main
@@ -18,8 +19,8 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-                a = _atoi(argv[1]);
-                b = _atoi(argv[2]);
+                a = atoi(argv[1]);
+                b = atoi(argv[2]);
                 printf("%d\n", a * b);
         }
 	return (0);
