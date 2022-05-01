@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdib.h>
 /**
- * main - Prints arguments passed into main
+ * main - multiplies arguments passed into main
  * @argc: Number of command line arguments
- * @argv: Array name
- * Return: 0
+ * @argv: Array of arguments
+ * Return: 1 if arguments <> 3 else 0
  */
 
 int main(int argc, char *argv[])
@@ -13,8 +14,8 @@ int main(int argc, char *argv[])
 
 	if(argc == 3)
 	{
-		a = _atoi(*(argv + 1));
-		b = _atoi(*(argv + 2));
+		a = atoi(*(argv + 1));
+		b = atoi(*(argv + 2));
 		printf("%d\n", a * b);
 	}
 	else
