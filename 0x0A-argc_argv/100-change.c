@@ -12,9 +12,13 @@ int main(int argc, char **argv)
 {
 	int cents = 0, money;
 
-	if (argc == 2)
+	money = atoi(argv[1]);
+	if (money <= 0)
 	{
-		money = atoi(argv[1]);
+		printf("0\n");
+	}
+	else if (argc == 2)
+	{
 		if (money >= 25)
 		{
 			cents += money / 25;
