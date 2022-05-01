@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - prints the sum of numerical arguments.
  * @argc: argument count or size of arguments.
@@ -15,7 +16,7 @@ int main(int argc, char **argv)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if(*(argv + i) >= '0' && *(argv + i) <= '9')
+			if(isdigit(argv[i]))
 			{
 				sum += atoi(*(argv + i));
 			}
