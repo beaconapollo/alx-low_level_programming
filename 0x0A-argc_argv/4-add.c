@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - prints the sum of numerical arguments.
  * @argc: argument count or size of arguments.
