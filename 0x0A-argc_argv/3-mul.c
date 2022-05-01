@@ -11,16 +11,16 @@ int main(int argc, char *argv[])
 {
 	int a, b;
 
-	if(argc == 3)
+	if(argc < 3 || argc > 3)
 	{
-		a = _atoi(argv[1]);
-		b = _atoi(argv[2]);
-		printf("%d\n", a * b);
+		printf("Error\n");
+                return (1);
 	}
 	else
 	{
-		printf("Error\n");
-		return (1);
-	}
+                a = _atoi(argv[1]);
+                b = _atoi(argv[2]);
+                printf("%d\n", a * b);
+        }
 	return (0);
 }
