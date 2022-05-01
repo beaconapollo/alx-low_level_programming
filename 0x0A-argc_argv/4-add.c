@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 		{
 			if(argv[i] >= '0' && argv[i] <= '9')
 			{
-				sum += argv[i];
+				sum += atoi(argv[i]);
 			}
 			else
 			{
@@ -25,10 +25,6 @@ int main(int argc, char **argv)
 				return (1);
 			}
 		}
-	}
-	else
-	{
-		sum = 0;
 	}
 	printf("%i", sum);
 	return (0);
