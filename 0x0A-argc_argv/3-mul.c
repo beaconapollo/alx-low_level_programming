@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdib.h>
+
 /**
  * main - prints multiplication of arguments passed into main
  * @argc: Number of command line arguments
@@ -8,15 +8,16 @@
  * Return: 1 if arguments <> 3 else 0
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int a, b;
+	int a, b, m;
 
 	if(argc == 3)
 	{
-		a = atoi(*(argv + 1));
-		b = atoi(*(argv + 2));
-		printf("%i\n", a * b);
+		a = _atoi(*(argv + 1));
+		b = _atoi(*(argv + 2));
+		m = a * b;
+		printf("%i\n", m);
 	}
 	else
 	{
