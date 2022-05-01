@@ -27,6 +27,6 @@ int main(int argc, char **argv)
 			}
 		}
 	}
-	printf("%i", sum);
+	printf("%i\n", sum);
 	return (0);
 }
