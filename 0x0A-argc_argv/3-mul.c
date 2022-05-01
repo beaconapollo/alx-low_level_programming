@@ -4,7 +4,6 @@
  * main - prints multiplication of arguments passed into main
  * @argc: Number of command line arguments
  * @argv: Array of arguments
- *
  * Return: 1 if arguments <> 3 else 0
  */
 int main(int argc, char *argv[])
