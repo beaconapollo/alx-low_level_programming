@@ -13,10 +13,10 @@ int main(int argc, char *argv[])
 
 	if(*(argv + 1))
 	{
-		a = atoi(argv[1]);
+		a = _atoi(*(argv + 1));
 		if(*(argv + 2))
 		{
-			b = atoi(argv[2]);
+			b = _atoi(*(argv + 2));
 			printf("%d\n", a * b);
 		}
 		else
