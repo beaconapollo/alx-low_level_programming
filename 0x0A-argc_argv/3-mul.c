@@ -1,20 +1,20 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - prints multiplication of arguments passed into main
- * @argc: Number of command line arguments
- * @argv: Array of arguments
+ * main - print the multiplication of two arguments.
+ * @argc: argument count or size of arguments.
+ * @argv: argument vector
  *
- * Return: 1 if arguments are less than 3 otherwise 0
+ * Return: 1 if are less of 2 arguments otherwise 0.
  */
 int main(int argc, char **argv)
 {
 	int m;
 
-	if(argc == 3)
+	if (argc == 3)
 	{
-		m = atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n", m);
+		m = atoi(*(argv + 1)) * atoi(*(argv + 2));
+		printf("%i\n", m);
 	}
 	else
 	{
