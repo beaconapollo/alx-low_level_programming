@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		if(*(argv + 2))
 		{
 			b = _atoi(*(argv + 2));
-			printf("%d\n", a * b);
+			printf("%i\n", a * b);
 		}
 		else
 		{
