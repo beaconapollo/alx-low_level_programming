@@ -2,28 +2,30 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
- * main - prints the sum of numerical arguments.
+ * main - print the addition of two positive numbers.
  * @argc: argument count or size of arguments.
  * @argv: argument vector
  *
- * Return: 1 if argument is not digit otherwise 0.
+ * Return: 1 for less of 2 arguments or nondigit numbers, 0 success
  */
 int main(int argc, char **argv)
 {
-	int sum = 0, i;
+	int sum, i, j;
 
-	if (argc > 1)
+	sum = 0;
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if(!isdigit(argv[i]))
+			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
 				return (1);
 			}
-			sum += atoi(*(argv + i));
 		}
+		sum += atoi(argv[i]);
 	}
-	printf("%i\n", sum);
+
+	printf("%d\n", sum);
 	return (0);
 }
