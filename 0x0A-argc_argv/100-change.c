@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 /**
  * main - prints the minimum number of coins.
  * @argc: argument count or size of arguments.
@@ -11,9 +10,11 @@
 int main(int argc, char **argv)
 {
 	int cents[4] = {25, 10, 5, 2};
-	int i, money, coins = 0;
+	int i, money, coins;
 
+	coins = 0;
 	money = atoi(argv[1]);
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -34,7 +35,7 @@ int main(int argc, char **argv)
 			}
 		}
 		coins += money;
-		printf("%i", coins);
+		printf("%d\n", coins);
 	}
 	return (0);
 }
