@@ -13,29 +13,31 @@ int main(int argc, char **argv)
 	int i, money, coins;
 
 	coins = 0;
-	money = atoi(argv[1]);
-
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else if (money <= 0)
-	{
-		printf("0\n");
-	}
 	else
 	{
-		for (i = 0; i < 4; i++)
+		money = atoi(argv[1]);
+		if (money <= 0)
 		{
-			if (money >= cents[i])
-			{
-				coins += money / cents[i];
-				money %= cents[i];
-			}
+			printf("0\n");
 		}
-		coins += money;
-		printf("%d\n", coins);
+		else
+		{
+			for (i = 0; i < 4; i++)
+			{
+				if (money >= cents[i])
+				{
+					coins += money / cents[i];
+					money %= cents[i];
+				}
+			}
+			coins += money;
+			printf("%d\n", coins);
+		}
 	}
 	return (0);
 }
