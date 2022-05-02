@@ -14,12 +14,16 @@ int main(int argc, char **argv)
 	int i, money, coins = 0;
 
 	money = atoi(argv[1]);
-	if (argc == 1)
+	if (argc != 2)
 	{
 		printf("Error\n");
-		return(1);
+		return (1);
 	}
-	else if (argc == 2)
+	else if (money <= 0)
+	{
+		printf("0\n");
+	}
+	else
 	{
 		for (i = 0; i < 4; i++)
 		{
@@ -31,10 +35,6 @@ int main(int argc, char **argv)
 		}
 		coins += money;
 		printf("%i", coins);
-	}
-	else
-	{
-		printf("0\n");
 	}
 	return (0);
 }
