@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * strdup - returns a pointer to a duplicated string of str
+ * _strdup - returns a pointer to a duplicated string of str
  * @str: input string
  * Return: pointer of thestring
  */
