@@ -10,7 +10,7 @@
 char *argstostr(int ac, char **av)
 {
 	int i;
-	char *s
+	char *s;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
