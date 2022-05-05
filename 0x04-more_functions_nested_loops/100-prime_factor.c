@@ -69,7 +69,7 @@ int main(void)
 {
 	long int num;
 
-	num = 1231952;
+	num = 612852475143;
 	if (isPrime(num) == 1)
 	{
 		printf("%ld\n", num);
