@@ -66,4 +66,5 @@ long int biggestFactor(long int n)
 		}
 		i++;
 	}
+	return (factor);
 }
