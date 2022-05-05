@@ -39,13 +39,24 @@ long int biggestFactor(long int n)
 	long int i = 2, factor;
 
 	factor = n;
-	while (i <= factor && isPrime(factor) == 0)
+	for (i = 2; i <= factor; i++)
 	{
-		if (factor % i == 0 && isPrime(i) == 1)
+		if (isPrime(factor) == 1)
 		{
-			factor /= i;
+			break;
 		}
-		i++;
+		else
+		{
+			if ((factor % i == 0) && (isPrime(i) == 1))
+			{
+				factor = factor / i;
+				continue;
+			}
+			else
+			{
+				factor = factor;
+			}
+		}
 	}
 	return (factor);
 }
