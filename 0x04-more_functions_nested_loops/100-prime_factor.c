@@ -31,7 +31,7 @@ int isPrime(int n)
 }
 /**
  * biggestFactor - returns the biggest prime factor of a number
- * @a: number to check
+ * @n: number to check
  * Return: biggest factor
  */
 long int biggestFactor(long int n)
