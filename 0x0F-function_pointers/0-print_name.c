@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * print_name - prints a name
- * @name: name of a string
- * @f: function
+ * @name: astring to print
+ * @f: function that recieves a string
  *
  * Return: void
  */
