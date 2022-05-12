@@ -1,10 +1,13 @@
 #include "variadic_functions.h"
 /**
- * print_numbers - print all numbers.
- * @separator: separator between strings
- * @n: the number of parameters
- * Description: this function prints all the parameters)
- */
+ * print_strings - print strings.
+(* a blank line
+ *@separator: the number of parameters
+ *@n: the number of strings
+* Description: this function prints all the parameters)?
+(* section header: the header of this function is variadic_functions.h)*
+* Return: no retunr.
+*/
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
