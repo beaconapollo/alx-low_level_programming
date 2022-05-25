@@ -2,8 +2,8 @@
 
 /**
  * listint_len - prints the number of elements of a listint_t list
- * @h: linked list to be printed
- * Return: the number of nodes
+ * @h: linked list
+ * Return: the number of elements
  */
 
 size_t listint_len(const listint_t *h)
