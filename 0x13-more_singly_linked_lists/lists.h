@@ -1,9 +1,5 @@
-#ifndef CALC_H
-#define CALC_H
-
-#include <stdlib.h>
-#include <stdio.h>
-
+#ifndef MAIN_H
+#define MAIN_H
 /**
  * struct listint_s - singly linked list
  * @n: integer
@@ -17,6 +13,8 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-size_t print_listint(const listint_t *h);
+int _putchar(char);
+size_t print_listint(const listint_t *);
+size_t listint_len(const listint_t *);
 
 #endif
