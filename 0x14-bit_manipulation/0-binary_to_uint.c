@@ -5,11 +5,10 @@
  * @b: pointing to a string of 0 and 1 chars
  * Return: the converted number otherwise 0
  */
+
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i = 0;
-	unsigned int d = 0;
-	unsigned int len = 0, p, t = 1;
+	unsigned int p, i = 0, d = 0, len = 0, t = 1;
 
 	if (b == NULL)
 		return (0);
