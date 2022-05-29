@@ -9,7 +9,7 @@ void _start_from_MSB(unsigned long int d)
 	if (d == 0)
 		return;
 	_start_from_MSB(d >> 1);
-	printf("%c", (d & 1) == 0 ? '0' : '1');
+	_putchar((d & 1) + '0');
 }
 /**
  * print_binary - converts a number to binary
@@ -19,7 +19,7 @@ void _start_from_MSB(unsigned long int d)
 void print_binary(unsigned long int n)
 {
 	if (n == 0)
-		printf("%c", '0');
+		_putchar('0');
 	else
 		_start_from_MSB(n);
 }
