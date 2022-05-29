@@ -7,34 +7,19 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int p;
-	unsigned int i = 0;
-	unsigned int d = 0;
-	unsigned int len = 0;
-	unsigned int t = 1;
+	unsigned int n = 0;
+	unsigned int dec = 0;
 
 	if (b == NULL)
 		return (0);
-	while (*(b + len))
+	while (*(b + n) != '\0')
 	{
-		len++;
-	}
-	while (*(b + i))
-	{
-		if (*(b + i) != '1' && *(b + i) != '0')
+		if (*(b + n) != '0' && *(b + n) != '1')
 			return (0);
-		if (*(b + i) == '1')
-		{
-			p = len - i - 1;
-			while (p)
-			{
-				t *= 2;
-				p--;
-			}
-			d += t;
-			t = 1;
-		}
-		i++;
+		dec <<= 1;
+		if (*(b + n) == '1')
+			dec ^= 1;
+		n++;
 	}
-	return (d);
+	return (dec);
 }
