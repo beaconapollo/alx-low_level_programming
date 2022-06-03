@@ -27,7 +27,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		close(file_from), exit(99);
 	}
-
 	rd_status = 1;
 	while (rd_status)
 	{
