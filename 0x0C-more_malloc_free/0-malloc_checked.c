@@ -7,10 +7,7 @@
 void *malloc_checked(unsigned int b)
 {
         void *s = malloc(b);
-        if (s == NULL)
-        {
-                free(s);
-                exit(98);
-        }
-        return (s);
+        if (s)
+                return (s);
+        exit(98);       
 }
