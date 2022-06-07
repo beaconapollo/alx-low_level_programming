@@ -4,6 +4,7 @@
  * string_nconcat - conctenates two strings
  * @s1: first string
  * @s2: second string
+ * @n: the first bytes of s2
  * Return: a newly allocated space in memory
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -32,5 +33,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			s[i] = s2[i - l1];
 		i++;
 	}
+	s[buffer] = '\0';
 	return (s);
 }
