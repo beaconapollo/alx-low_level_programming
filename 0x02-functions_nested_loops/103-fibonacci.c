@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	long int x = 1, y = 2, z = 0, sum = 0;
+	long int x = 1, y = 2, z = 0, sum = 2;
 
 	while (z <= 4000000)
 	{
