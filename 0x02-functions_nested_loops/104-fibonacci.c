@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - This print all multiples of 5 and 3 of 1024
+ * main - entry point
  * Return: Always 0
  */
 int main(void)
@@ -10,13 +10,13 @@ int main(void)
 
 	while (i < 98)
 	{
-		z = x + y;
-		x = y;
-		y = z;
 		if (i < 97)
 			printf("%lu, ", x);
 		else
 			printf("%lu", x);
+		z = x + y;
+		x = y;
+		y = z;		
 		i++;
 	}
 	return (0);
