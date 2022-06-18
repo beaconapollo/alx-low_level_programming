@@ -1,82 +1,35 @@
-#include <stdio.h>
-#include "main.h"
-/**
- * isPrime - analise if a number is prime or not
- * @n: number to check
- * Return: true if it is prime false if not
- */
-int isPrime(int n)
-{
-	int i;
-
-	if (n <= 1)
-	{
-		return (0);
-	}
-	else if (n == 2)
-	{
-		return (1);
-	}
-	else
-	{
-		for (i = 2; i < n; i++)
-		{
-			if (n % i == 0)
-			{
-				return (0);
-			}
-		}
-		return (1);
-	}
-}
-/**
- * biggestFactor - returns the biggest prime factor of a number
- * @n: number to check
- * Return: biggest factor
- */
-long int biggestFactor(long int n)
-{
-	long int i = 2, factor;
-
-	factor = n;
-	for (i = 2; i <= factor; i++)
-	{
-		if (isPrime(factor) == 1)
-		{
-			break;
-		}
-		else
-		{
-			if ((factor % i == 0) && (isPrime(i) == 1))
-			{
-				factor = factor / i;
-				continue;
-			}
-			else
-			{
-				factor = factor;
-			}
-		}
-	}
-	return (factor);
-}
 /*
- * main - prints the biggest prime factor of a number.
+ * File: 100-prime_factor.c
+ * Auth: Brennan D Baraban
+ */
+
+#include <stdio.h>
+
+/**
+ * main - prints the largest prime factor of 612852475143.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	long int num;
+	long prime = 612852475143, div;
 
-	num = 612852475143;
-	if (isPrime(num) == 1)
+	while (div < (prime / 2))
 	{
-		printf("%ld\n", num);
+		if ((prime % 2) == 0)
+		{
+			prime /= 2;
+			continue;
+		}
+
+		for (div = 3; div < (prime / 2); div += 2)
+		{
+			if ((prime % div) == 0)
+				prime /= div;
+		}
 	}
-	else
-	{
-		printf("%ld\n", biggestFactor(num));
-	}
+
+	printf("%ld\n", prime);
+
 	return (0);
 }
