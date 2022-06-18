@@ -5,7 +5,6 @@
  */
 int main (void)
 {
-	int i;
 	long int x = 1, y = 2, z = 0, sum = 0;
 
 	while (z <= 4000000)
