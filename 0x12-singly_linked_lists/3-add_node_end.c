@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "lists.h"
 
+char *_strdup(const char *str);
 /**
  * add_node_end - function with two arguments
  * @head: pointer to struct of linked list
