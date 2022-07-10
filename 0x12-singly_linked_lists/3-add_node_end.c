@@ -1,24 +1,18 @@
 #include <stdlib.h>
-#include <string.h>
 #include "lists.h"
+
 /**
- * add_node_end - adds a new node at the end of a list_t list
- * @head: pointer to the first node
- * @str: char pointer for data to be added
- * Return: the address of the new element, otherwise NULL
+ * add_node_end - function with two arguments
+ * @head: pointer to struct of linked list
+ * @str: char type pointer to string
  *
+ * Description: adds a new node at the end of linked list
+ * Return: address of new element
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *current, *end_node;
-	char *dupstr;
-	int i = 0, len;
-
-	if (str == NULL)
-		return (NULL);
-
-	if (*head == NULL)
-		return (NULL);
+	int count = 0;
+	list_t *end_node, *cursor;
 
 	end_node = malloc(sizeof(list_t));
 	if (end_node == NULL)
@@ -26,40 +20,60 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (str)
 	{
-		while (*(str + i))
-			i++;
-		len = i + 1;
-		i = 0;
-
-		dupstr = malloc(sizeof(char) * len);
-		if (dupstr == NULL)
-			return (NULL);
-		while (*(str + i))
-		{
-			dupstr[i] = str[i];
-			i++;
-		}
-		dupstr[i] = '\0';
-
-		end_node->str = dupstr;
-		end_node->len = len - 1;
+		end_node->str = _strdup(str);
+		while (str[count] != '\0')
+			count++;
+		end_node->len = count;
 	}
 	else
 	{
 		end_node->str = NULL;
 		end_node->len = 0;
 	}
-
 	end_node->next = NULL;
-
 	if (*head)
 	{
-		current = *head;
-		while (current->next != NULL)
-			current = current->next;
-		current->next = end_node;
+	cursor = *head;
+	while (cursor->next != NULL)
+		cursor = cursor->next;
+	cursor->next = end_node;
 	}
 	else
 		*head = end_node;
 	return (end_node);
+}
+
+/**
+ * *_strdup - function with one argument
+ * @str: string argument
+ *
+ * Description: returns a pointer to allocated space in memory
+ * Return: pointer
+ */
+char *_strdup(const char *str)
+{
+	int i, j;
+	char *ptr;
+
+	if (str == NULL)
+		return (NULL);
+	i = 0;
+	while (*(str + i) != '\0')
+	{
+		i++;
+	}
+
+	ptr = malloc(sizeof(char) * i + 1);
+
+	if (ptr == NULL)
+		return (NULL);
+
+	j = 0;
+	while (str[j] != '\0')
+	{
+		ptr[j] = str[j];
+		j++;
+	}
+	ptr[j] = '\0';
+	return (ptr);
 }
